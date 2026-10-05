@@ -1,0 +1,18 @@
+site_name: Documentation du projet
+site_url: https://Les-Baroudeurs-du-Bit.github.io/mkdocs/
+
+theme:
+  name: material
+  language: fr
+  palette:
+    primary: custom
+    secondary: custom
+  font:
+    text: Arial
+    code: Roboto Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Accueil: index.md
