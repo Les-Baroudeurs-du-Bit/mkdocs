@@ -16,3 +16,4 @@ extra_css:
 
 nav:
   - Accueil: index.md
+  - Comparaison: tab-comparatifs.md
