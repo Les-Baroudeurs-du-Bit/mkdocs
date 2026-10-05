@@ -6,13 +6,13 @@ theme:
   language: fr
   palette:
     primary: custom
-    secondary: custom
+    accent: custom
   font:
     text: Arial
     code: Roboto Mono
 
 extra_css:
-  - stylesheets/extra.css
+  - Stylesheets/extra.css
 
 nav:
   - Accueil: index.md
