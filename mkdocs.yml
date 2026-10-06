@@ -18,3 +18,4 @@ nav:
   - Accueil: index.md
   - Comparaison: tab-comparatifs.md
   - "Analyse Stack": comp-stack.md
+  - "Suivi des tokens": tab-tokens.md
