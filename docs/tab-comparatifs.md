@@ -1,4 +1,5 @@
-# Tableau Avantages / inconvénients technologies :  
+# Comparatif des différentes technologies
+## Tableau Avantages / inconvénients technologies :  
 |    | Avantages | Inconvénients |
 |-:|:---|:---|
 |Cross Platform | <ul><li>Une seule équipe et une base de code unique = moins de dépenses de moitié par rapport à deux développements séparés.</li><li>Le lancement sur le marché est plus rapide grâce à la mutualisation des efforts de développement.</li><li>Les mises à jour et la correction des bugs s'appliquent en même temps à toutes les versions</li></ul> | <ul><li>L'utilisation d'une couche intermédiaire ou d'un moteur partagé peut ralentir l'application face au code natif.</li><li>L'intégration de fonctionnalités très spécifiques liées au téléphone s'avère parfois complexe.</li><li>Le rendu visuel peut s'éloigner légèrement des codes ergonomiques propres à chaque système (iOS ou Android).</li></ul> |
@@ -8,7 +9,7 @@
 | Progressive Web App | <ul><li>L'accès aux fonctionnalités poussées du téléphone (Bluetooth…) reste restreint comparé à une application native.</li><li>Absence d'une présence native sur les boutiques d'applications classiques limite la découverte spontanée par de nouveaux utilisateurs.</li><li>Certaines fonctionnalités des PWA restent moins bien prises en charge sur Safari comparé à l'écosystème Android.</li><li>Une mauvaise gestion du cache ou des scripts en arrière-plan peut parfois consommer davantage d'énergie.</li></ul> | <ul><li>Coût et temps de développement réduits</li><li>L'installation se fait directement depuis le navigateur sur l'écran d'accueil, ce qui évite de passer par un tier (App Store …)</li><li>Grâce aux services workers, la PWA peut charger du contenu même sans connexion Internet ou sur un réseau de faible qualité.</li><li>L'application se met à jour en arrière-plan à chaque visite, sans action requise de la part de l'utilisateur.</li><li>Les PWA occupent très peu d'espace de stockage sur l'appareil par rapport à une application native.</li></ul> |
 
 
-# Tableau comparatif pour le projet
+## Tableau comparatif pour le projet
 | Critères & Cas d'usage | Progressive Web App (PWA) | Application Cross-Plateforme |
 | -: | - | - |
 |Préparation sur PC (web) | **Excellente :** L'application est nativement un site web. L'interface s'adapte parfaitement aux grands écrans (tableaux de bord, cartes interactives). | **Moyenne :** Bien que Flutter ou React Native compilent pour le Web, le rendu "bureau" peut parfois sembler lourd ou moins naturel qu'une vraie page web. |
