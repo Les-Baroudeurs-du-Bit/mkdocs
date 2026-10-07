@@ -1,0 +1,764 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Les-Baroudeurs-du-Bit.github.io/mkdocs/comp-stack/">
+      
+      
+        <link rel="prev" href="../tab-comparatifs/">
+      
+      
+        <link rel="next" href="../tab-tokens/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Analyse Stack - Documentation du projet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../Stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analyse-detaillee-des-technologies" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Documentation du projet" class="md-header__button md-logo" aria-label="Documentation du projet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation du projet
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analyse Stack
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation du projet" class="md-nav__button md-logo" aria-label="Documentation du projet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation du projet
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deroulement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Déroulement du projet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tab-comparatifs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparaison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analyse Stack
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analyse Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synthese-de-la-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synthèse de la Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#justification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Justification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-vuejs-vs-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend : Vue.js vs React.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-java-spring-boot-vs-nodejs-expressjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend : Java Spring Boot vs Node.js &amp; Express.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-de-donnees-mysql-sql-vs-mongodb-nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base de données : MySQL (SQL) vs MongoDB (NoSQL)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-de-geolocalisation-cartographie-mapbox-vs-openstreetmap-nominatim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API de Géolocalisation &amp; Cartographie : Mapbox vs OpenStreetMap (Nominatim)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tab-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivi des tokens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synthese-de-la-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Synthèse de la Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#justification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Justification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-vuejs-vs-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend : Vue.js vs React.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-java-spring-boot-vs-nodejs-expressjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend : Java Spring Boot vs Node.js &amp; Express.js
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-de-donnees-mysql-sql-vs-mongodb-nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base de données : MySQL (SQL) vs MongoDB (NoSQL)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-de-geolocalisation-cartographie-mapbox-vs-openstreetmap-nominatim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API de Géolocalisation &amp; Cartographie : Mapbox vs OpenStreetMap (Nominatim)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="analyse-detaillee-des-technologies">Analyse détaillée des technologies</h1>
+<h2 id="synthese-de-la-stack">Synthèse de la Stack</h2>
+<pre><code>[ Frontend PWA ]           Vue.js (Vite + Pinia) + Leaflet (Cartes)
+        │  
+        ▼ (REST / JSON + JWT)
+[ Backend API ]            Spring Boot (Java 17/21) + Spring Security
+         │
+        ▼ (JDBC / JPA Hibernate)
+[ Base de Données ]      MySQL 8.0 sur MariaDB
+         │
+[ Infrastructure ]             Docker (Conteneurisation) + GitLab CI/CD
+</code></pre>
+<p>Cette combinaison allie la rapidité d'exécution front-end (Vue.js pour une PWA réactive et simple à mettre en cache hors-ligne) à la rigueur logicielle back-end (Spring Boot et MySQL pour la robustesse des données et l'application stricte des Design Patterns).</p>
+<h2 id="justification">Justification</h2>
+<h3 id="frontend-vuejs-vs-reactjs">Frontend : Vue.js vs React.js</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Critères</th>
+<th style="text-align: left;">Vue.js (avec Vite)</th>
+<th style="text-align: left;">React.js (avec Vite / Next.js)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>Intégration PWA &amp; Offline</strong></td>
+<td style="text-align: left;"><strong>Excellent :</strong> L'outillage (vite-plugin-pwa) est fluide et génère le Service Worker et le manifeste avec une configuration minimale.</td>
+<td style="text-align: left;"><strong>Très bonne :</strong> Nécessite souvent un peu plus de configuration manuelle ou des dépendances tierces (ex: Workbox configuré sur-mesure).</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Courbe d'apprentissage &amp; Vélocité Agile</strong></td>
+<td style="text-align: left;"><strong>Rapide :</strong> La séparation claire template/script/style (Single File Components) facilite la répartition des tâches au sein d'une équipe.</td>
+<td style="text-align: left;"><strong>Moyenne :</strong> Le paradigme JSX et la gestion fine des re-renders demandent une rigueur accrue pour éviter les fuites de performances.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Gestion d'état global (Offline cache)</strong></td>
+<td style="text-align: left;"><strong>Très fluide :</strong> Pinia offre une gestion de store typée, intuitive et facilement synchronisable avec IndexedDB.</td>
+<td style="text-align: left;"><strong>Très robuste :</strong> Redux Toolkit ou TanStack Query sont puissants mais introduisent du code boilerplate plus lourd.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le verdict pour le projet : Vue.js</strong><br />
+Pourquoi ? Pour un projet où les délais sont rythmés par des sprints agiles, Vue.js offre un ratio vélocité/qualité optimal. Son écosystème avec Vite permet de configurer le mode hors-ligne (Service Worker + mise en cache des cartes et plannings) sans complexité accidentelle, tout en garantissant un code propre et maintenable.</p>
+<h3 id="backend-java-spring-boot-vs-nodejs-expressjs">Backend : Java Spring Boot vs Node.js &amp; Express.js</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Critères</th>
+<th style="text-align: left;">Spring Boot (Java)</th>
+<th style="text-align: left;">Node.js (Express.js)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>Architecture &amp; Bonnes Pratiques</strong></td>
+<td style="text-align: left;"><strong>Très structurée :</strong> Impose naturellement une architecture en couches (Controller, Service, Repository, DTO), des interfaces et l'injection de dépendances.</td>
+<td style="text-align: left;"><strong>Très libre :</strong> Flexible, mais le manque de cadre strict peut mener à du code spaghetti ou à des disparités de style selon les développeurs.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Typage &amp; Fiabilité</td>
+<td style="text-align: left;"><strong>Typage fort (Java) :</strong> Détecte la majorité des erreurs à la compilation, idéal pour sécuriser les calculs financiers (budget/caisse commune).</td>
+<td style="text-align: left;"><strong>Faible (JavaScript) :</strong> à moins d'utiliser TypeScript. Les erreurs d'inattention peuvent survenir au moment de l'exécution.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Homogénéité de la Stack</strong></td>
+<td style="text-align: left;">Deux langages différents entre front et back (Java et JS/TS), demandant de la polyvalence.</td>
+<td style="text-align: left;">Stack 100% JavaScript/TypeScript de bout en bout (partage potentiel de types et validation de schémas).</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Performance &amp; I/O</strong></td>
+<td style="text-align: left;">Modèle multithread robuste, un peu plus lourd au démarrage et en mémoire.</td>
+<td style="text-align: left;">Modèle asynchrone non-bloquant (Event Loop), très léger et idéal pour le streaming de médias ou les websockets.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le verdict pour le projet : Spring Boot</strong><br />
+Pourquoi ? Le cahier des charges insiste sur la qualité du code et les bonnes pratiques d'ingénierie logicielle. Spring Boot impose un cadre industriel rigoureux (séparation nette des responsabilités, gestion stricte des entités pour le budget et la sécurité via Spring Security / JWT). C'est le choix le plus convaincant pour démontrer la maîtrise d'un cycle de développement logiciel complet.</p>
+<h3 id="base-de-donnees-mysql-sql-vs-mongodb-nosql">Base de données : MySQL (SQL) vs MongoDB (NoSQL)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Critères</th>
+<th style="text-align: left;">MySQL</th>
+<th style="text-align: left;">MongoDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>Cohérence des données (Transactions ACID)</strong></td>
+<td style="text-align: left;"><strong>Totale :</strong> Gestion irréprochable des clés étrangères, intégrité référentielle native.</td>
+<td style="text-align: left;"><strong>Éventuelle :</strong> Moins adapté nativement aux calculs de dettes croisées complexes entre membres d'un groupe.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Flexibilité des étapes du Road Trip</strong></td>
+<td style="text-align: left;"><strong>Rigide :</strong> Une étape avec hôtel, une étape avec visite et une étape "trajet" nécessitent soit plusieurs tables reliées, soit des colonnes nullables.</td>
+<td style="text-align: left;"><strong>Maximale :</strong> Chaque document d'étape peut avoir son propre schéma (notes libres, checklists, coordonnées, URLs d'images).</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Modélisation du voyage</strong></td>
+<td style="text-align: left;">Nécessite des tables d'association (Utilisateurs←→Voyages ←→ Étapes ←→Dépenses).</td>
+<td style="text-align: left;">Stocke un voyage complet sous forme de document JSON hiérarchique, très facile à requêter et à cacher en local.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le verdict pour le projet : MySQL</strong><br />
+Pourquoi ? Même si MongoDB séduit par sa souplesse pour les étapes, l'application comporte des relations fortes et critiques : gestion des rôles (qui a le droit de modifier le road trip), caisse commune (qui doit quoi à qui), et liste des amis notifiés pour les selfies. Une base relationnelle avec des contraintes d'intégrité strictes évite les incohérences de données, notamment lors des synchronisations hors-ligne où deux utilisateurs pourraient modifier des plannings simultanément.</p>
+<h3 id="api-de-geolocalisation-cartographie-mapbox-vs-openstreetmap-nominatim">API de Géolocalisation &amp; Cartographie : Mapbox vs OpenStreetMap (Nominatim)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Critères</th>
+<th style="text-align: left;">Mapbox API</th>
+<th style="text-align: left;">OpenStreetMap (Nominatim / Leaflet)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>Reverse Geocoding (Coordonnées $\rightarrow$ Nom de lieu)</strong></td>
+<td style="text-align: left;"><strong>Très précis et rapide :</strong> Retourne des noms de lieux clairs et touristiques (ex: Château de Neuschwanstein).</td>
+<td style="text-align: left;"><strong>Variable :</strong> Dépend des contributions communautaires, parfois verbeux ou imprécis selon les zones rurales.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Coût &amp; Quotas</strong></td>
+<td style="text-align: left;">Modèle freemium (généreux au début, mais carte bancaire et facturation au-delà des quotas).</td>
+<td style="text-align: left;"><strong>100% gratuit et Open Source :</strong> Idéal pour un projet universitaire, mais soumis à une limite stricte de débit (1 requête/seconde max pour Nominatim).</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Rendu cartographique PWA</strong></td>
+<td style="text-align: left;">SDK vectoriel très fluide et interactif, rendu esthétique sur mobile et PC.</td>
+<td style="text-align: left;">Excellente intégration avec la librairie Leaflet.js, très légère pour une PWA mobile.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Le verdict pour le projet : OpenStreetMap (Leaflet + Nominatim)</strong><br />
+Pourquoi ? Dans le cadre d'une SAE, privilégier une solution open source sans risque de dépassement de facturation est un choix responsable. Pour la fonctionnalité du selfie quotidien (une requête par jour par voyageur), la limite de débit de Nominatim n'est absolument pas un problème, et la légèreté de la bibliothèque Leaflet sur mobile garantit une excellente fluidité dans la PWA.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

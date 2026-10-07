@@ -1,0 +1,628 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Les-Baroudeurs-du-Bit.github.io/mkdocs/tab-comparatifs/">
+      
+      
+        <link rel="prev" href="../deroulement/">
+      
+      
+        <link rel="next" href="../comp-stack/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Comparaison - Documentation du projet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../Stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comparatif-des-differentes-technologies" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Documentation du projet" class="md-header__button md-logo" aria-label="Documentation du projet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation du projet
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comparaison
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation du projet" class="md-nav__button md-logo" aria-label="Documentation du projet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation du projet
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deroulement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Déroulement du projet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparaison
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparaison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-avantages-inconvenients-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tableau Avantages / inconvénients technologies :
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-comparatif-pour-le-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tableau comparatif pour le projet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Résumé
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comp-stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analyse Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tab-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivi des tokens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-avantages-inconvenients-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tableau Avantages / inconvénients technologies :
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-comparatif-pour-le-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tableau comparatif pour le projet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Résumé
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="comparatif-des-differentes-technologies">Comparatif des différentes technologies</h1>
+<h2 id="tableau-avantages-inconvenients-technologies">Tableau Avantages / inconvénients technologies :</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Avantages</th>
+<th style="text-align: left;">Inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Cross Platform</td>
+<td style="text-align: left;"><ul><li>Une seule équipe et une base de code unique = moins de dépenses de moitié par rapport à deux développements séparés.</li><li>Le lancement sur le marché est plus rapide grâce à la mutualisation des efforts de développement.</li><li>Les mises à jour et la correction des bugs s'appliquent en même temps à toutes les versions</li></ul></td>
+<td style="text-align: left;"><ul><li>L'utilisation d'une couche intermédiaire ou d'un moteur partagé peut ralentir l'application face au code natif.</li><li>L'intégration de fonctionnalités très spécifiques liées au téléphone s'avère parfois complexe.</li><li>Le rendu visuel peut s'éloigner légèrement des codes ergonomiques propres à chaque système (iOS ou Android).</li></ul></td>
+</tr>
+<tr>
+<td style="text-align: right;">Appli Web</td>
+<td style="text-align: left;"><ul><li>L'appli accessible depuis n'importe quel appareil via un navigateur web.</li><li>Pas besoin de télécharger un fichier lourd ou de passer par un App Store</li><li>Les modifications sont déployées directement sur le serveur la dernière version (direct)</li><li>Un seul code source fonctionne sur tous les systèmes d'exploitation → réduit les coûts initiaux par rapport à des appli natives.</li></ul></td>
+<td style="text-align: left;"><ul><li>L'application nécessite le plus souvent une connexion Internet active</li><li>Généralement moins rapides et moins puissantes que les applications natives</li><li>L'accès aux fonctionnalités avancées de l'appareil est plus restreint via un navigateur.</li><li>Contrairement aux stores d'applications, une application web dépend de la visibilité sur les moteurs de recherche.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Appli mobile</td>
+<td style="text-align: left;"><ul><li>L'application utilise les fonctionnalités du téléphone (appareil photo, GPS…)</li><li>Une partie des données reste accessible hors connexion internet.</li><li>Les applications natives s'exécutent plus rapidement et plus fluidement.</li></ul></td>
+<td style="text-align: left;"><ul><li>Le développement et la maintenance demandent un budget important</li><li>La publication sur l'App Store ou Google Play impose des règles strictes, des frais de licence annuels…</li><li>Les évolutions des systèmes d'exploitation exigent une maintenance technique continue.</li></ul></td>
+</tr>
+<tr>
+<td style="text-align: right;">Logiciel Bureau</td>
+<td style="text-align: left;"><ul><li>Le programme tourne sans ralentissement lié au réseau, elle fonctionne sans connexion Internet.</li><li>Les données restent stockées sur la machine de l'utilisateur, ce qui protège la confidentialité.</li><li>Le logiciel accède facilement aux périphériques de l'ordinateur (imprimantes, clés USB…).</li></ul></td>
+<td style="text-align: left;"><ul><li>Chaque poste doit recevoir les nouvelles versions manuellement ou via un système automatisé.</li><li>Il faut souvent réécrire ou adapter le code pour Windows, macOS et Linux.</li><li>Le partage du logiciel est plus lourd que l'envoi d'un simple lien vers un site Web.</li></ul></td>
+</tr>
+<tr>
+<td style="text-align: right;">Progressive Web App</td>
+<td style="text-align: left;"><ul><li>L'accès aux fonctionnalités poussées du téléphone (Bluetooth…) reste restreint comparé à une application native.</li><li>Absence d'une présence native sur les boutiques d'applications classiques limite la découverte spontanée par de nouveaux utilisateurs.</li><li>Certaines fonctionnalités des PWA restent moins bien prises en charge sur Safari comparé à l'écosystème Android.</li><li>Une mauvaise gestion du cache ou des scripts en arrière-plan peut parfois consommer davantage d'énergie.</li></ul></td>
+<td style="text-align: left;"><ul><li>Coût et temps de développement réduits</li><li>L'installation se fait directement depuis le navigateur sur l'écran d'accueil, ce qui évite de passer par un tier (App Store …)</li><li>Grâce aux services workers, la PWA peut charger du contenu même sans connexion Internet ou sur un réseau de faible qualité.</li><li>L'application se met à jour en arrière-plan à chaque visite, sans action requise de la part de l'utilisateur.</li><li>Les PWA occupent très peu d'espace de stockage sur l'appareil par rapport à une application native.</li></ul></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tableau-comparatif-pour-le-projet">Tableau comparatif pour le projet</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Critères &amp; Cas d'usage</th>
+<th>Progressive Web App (PWA)</th>
+<th>Application Cross-Plateforme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Préparation sur PC (web)</td>
+<td><strong>Excellente :</strong> L'application est nativement un site web. L'interface s'adapte parfaitement aux grands écrans (tableaux de bord, cartes interactives).</td>
+<td><strong>Moyenne :</strong> Bien que Flutter ou React Native compilent pour le Web, le rendu "bureau" peut parfois sembler lourd ou moins naturel qu'une vraie page web.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Utilisation Mobile (Consultation/Édition)</td>
+<td><strong>Très bonne :</strong> Installation directe depuis le navigateur sans passer par les stores. L'UI est responsive.</td>
+<td><strong>Excellente :</strong> Expérience 100% native avec des animations fluides et les composants d'interface standards d'iOS et Android.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Mode Hors Ligne (OffLine)</td>
+<td><strong>Bonne :</strong> Utilisation des Service Workers et de IndexedDB pour mettre en cache l'itinéraire et les données.</td>
+<td><strong>Excellente :</strong> Accès direct au stockage natif de l'appareil (ex: SQLite) offrant une gestion de cache plus robuste pour les grosses bases de données.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Intégration Spotify</td>
+<td><strong>Limitée mais fonctionnelle :</strong> Utilisation des URI Web ou des liens profonds (ex: spotify://) pour ouvrir l'application.</td>
+<td><strong>Optimale :</strong> Possibilité d'utiliser des SDK natifs Spotify pour un contrôle plus poussé (lecture directe dans l'app, authentification native).</td>
+</tr>
+<tr>
+<td style="text-align: right;">Cycle de développement (Agile)</td>
+<td><strong>Très rapide :</strong> Une seule base de code (Web). Mises à jour instantanées sans validation par les App Stores (Apple/Google).</td>
+<td><strong>Plus complexe :</strong> Nécessite de compiler pour les stores. Les cycles de validation Apple/Google peuvent freiner les itérations agiles.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resume">Résumé</h2>
+<p>La PWA transforme un site web en une application dluide, installable et résiliente aux problèmes de connectivité.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

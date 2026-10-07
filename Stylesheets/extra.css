@@ -1,0 +1,9 @@
+:root {
+  /* Rouge Corporate de l'Université de Limoges */
+  --md-primary-fg-color:        #B51621;
+  --md-primary-fg-color--light: #D1323C;
+  --md-primary-fg-color--dark:  #8B0E17;
+  
+  /* Gris Corporate ou couleur d'accentuation */
+  --md-accent-fg-color:         #4B575F;
+}
