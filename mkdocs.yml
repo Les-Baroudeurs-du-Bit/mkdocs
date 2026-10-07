@@ -16,6 +16,7 @@ extra_css:
 
 nav:
   - Accueil: index.md
+  - "Déroulement du projet": deroulement.md
   - Comparaison: tab-comparatifs.md
   - "Analyse Stack": comp-stack.md
   - "Suivi des tokens": tab-tokens.md
