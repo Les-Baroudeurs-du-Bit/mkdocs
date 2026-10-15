@@ -11,3 +11,5 @@
 | Gemini Pro | 1 500 | Challenger l’IA sur le story mapping. |
 | Gemini Pro | 15 000 | Aide à la réalisation d’un squelette PWA du formulaire de réservation d’un hôtel |
 | Figma Make | 8 000 | Modification de la maquette avec charte graphique |
+| Gemini, copilot | 16 000 | Aide à la réalisation du squelette du formulaire de réservation d'un hotêl |
+| Figma Make | 13 400 | Modification de la maquette pour réaliser un scénario, ajout d'une page d'accueil et l'enregistrement et affichage des réservations |
