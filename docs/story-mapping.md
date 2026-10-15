@@ -7,6 +7,7 @@ L'axe vertical, lui, représente les priorités des fonctionnalités pour un mê
 ![story mapping](Images/story_mapping.jpg)  
 
 ## Modèle modifié à l'aide de l'IA
-L'IA nous a indiqué qu'il est plus propre de regrouper toutes les tâches liées à la gestion (créer, lire, modifier, supprimer) dans un post-it et d'indiquer "CRUD" pour signifier qu'il est bien question de gestion. C'est pourquoi, toutes les fonctionnalités de modification ou lecture qui étaient présentes dans R3, R4 ont été regroupées pour la majorité dans R1, et dans R2 pour les catégories moins prioritaires comme le transport ou les documents.  
+L'IA nous a indiqué qu'il est plus propre de regrouper toutes les tâches liées à la gestion (créer, lire, modifier, supprimer) dans un post-it et d'indiquer "CRUD" pour signifier qu'il est bien question de gestion Lister fait aussi partie de CRUD, car c'est une façon d'afficher les données et donc de les lire. C'est pourquoi, toutes les fonctionnalités de modification ou lecture qui étaient présentes dans R3, R4 ont été regroupées pour la majorité dans R1, et dans R2 pour les catégories moins prioritaires comme le transport ou les documents.  
+L'IA nous a aussi suggéré l'ajout de la gestion d'authentification, pour que les utilisateurs puissent créer un compte et retrouver leurs données plus facilement.
 
 ![story mapping ia](Images/story_mapping_ai_modified.jpg)
