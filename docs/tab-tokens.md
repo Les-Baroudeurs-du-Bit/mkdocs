@@ -13,4 +13,5 @@
 | Figma Make | 8 000 | Modification de la maquette avec charte graphique |
 | Gemini, copilot | 16 000 | Aide à la réalisation du squelette du formulaire de réservation d'un hotêl |
 | Figma Make | 13 400 | Modification de la maquette pour réaliser un scénario, ajout d'une page d'accueil et l'enregistrement et affichage des réservations |
-| Gemini | 20 000 | Travailler le suelette de l'appli sur les cas limites (ex : saisie des dates) + refacto globale pour la qualité de code |
+| Gemini | 20 000 | Travailler le squelette de l'appli sur les cas limites (ex : saisie des dates) + refacto globale pour la qualité de code |
+| Gemini Flash | 470 | Recherche sur les applications déjà existantes de road trip et leur technologie |
