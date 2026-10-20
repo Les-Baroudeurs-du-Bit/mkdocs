@@ -1,4 +1,4 @@
-# Déroulement du projet
+# Organisation du travail
 
 - Découverte des technologies et de l'architecture  
 - Confection d'une maquette  

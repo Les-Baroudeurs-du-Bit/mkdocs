@@ -15,4 +15,4 @@
 | Figma Make | 13 400 | Modification de la maquette pour réaliser un scénario, ajout d'une page d'accueil et l'enregistrement et affichage des réservations |
 | Gemini Pro | 20 000 | Travailler le squelette de l'appli sur les cas limites (ex : saisie des dates) + refacto globale pour la qualité de code |
 | Gemini Flash | 470 | Recherche sur les applications déjà existantes de road trip et leur technologie |
-| Claude Code Opus 5.5 | 25 000 000 | Confection entière de la maquette à partir de la rédaction des stories |
+| Claude Code Opus 5.5 | 25 000 000 | Refection entière de la maquette à partir de la rédaction des stories |
