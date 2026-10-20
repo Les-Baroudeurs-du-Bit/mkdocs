@@ -9,14 +9,18 @@ Dans le cadre de l'utilisation de l'application RoadTrip, les données suivantes
 - Mot de passe (stocké sous forme chiffrée ou hachée)
 
 ## Données liées au voyage
-- Itinéraires enregistrés
-- Étapes du roadtrip
-- Activités ajoutées par l'utilisateur
-- Informations relatives aux hébergements :
-  - Nom de l'hébergement
-  - Adresse ou localisation
-  - Nombre de nuits
-  - Nombre de chambres (si renseigné)
+<ul>
+  <li>Itinéraires enregistrés</li>
+  <li>Étapes du roadtrip</li>
+  <li>Activités ajoutées par l'utilisateur</li>
+  <li>Informations relatives aux hébergements :</li>
+  <ul>
+    <li>Nom de l'hébergement</li>
+    <li>Adresse ou localisation</li>
+    <li>Nombre de nuits</li>
+    <li>Nombre de chambres (si renseigné)</li>
+  </ul>
+</ul>
 
 ## Contenus partagés
 - Photographies publiées par l'utilisateur
