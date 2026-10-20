@@ -11,12 +11,12 @@
 /* Augmenter l'espacement global des listes à puces et ordonnées */
 .md-typeset ul, 
 .md-typeset ol {
-  padding-left: 2.5rem; /* Ajustez cette valeur selon vos préférences (ex: 2rem ou 3rem) */
+  padding-left: 1rem; /* Ajustez cette valeur selon vos préférences (ex: 2rem ou 3rem) */
 }
 
 /* Augmenter spécifiquement l'indentation des sous-listes imbriquées */
 .md-typeset li ul, 
 .md-typeset li ol {
   margin-top: 0.4em;
-  padding-left: 2rem; 
+  padding-left: 3.5rem !important; 
 }
