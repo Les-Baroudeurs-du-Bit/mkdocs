@@ -17,6 +17,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - "Déroulement du projet": deroulement.md
+  - "Organisation du projet et méthodologie": orga-methodo.md
   - Comparaison: tab-comparatifs.md
   - "Analyse Stack": comp-stack.md
   - "Suivi des tokens": tab-tokens.md
