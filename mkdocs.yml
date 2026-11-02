@@ -22,5 +22,6 @@ nav:
   - Comparaison: tab-comparatifs.md
   - "Analyse Stack": comp-stack.md
   - "Suivi des tokens": tab-tokens.md
+  - "Comparaison des modèles d'IA utilisés": modeles-ia.md
   - "Story Mapping": story-mapping.md
   - "RGPD": RGPD.md
