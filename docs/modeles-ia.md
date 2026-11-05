@@ -1,4 +1,4 @@
-1. # Choix des modèles d'IA
+# Choix des modèles d'IA
 
 ## Objectif
 
