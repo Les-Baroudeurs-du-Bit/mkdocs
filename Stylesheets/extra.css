@@ -1,0 +1,22 @@
+:root {
+  /* Rouge Corporate de l'Université de Limoges */
+  --md-primary-fg-color:        #B51621;
+  --md-primary-fg-color--light: #D1323C;
+  --md-primary-fg-color--dark:  #8B0E17;
+  
+  /* Gris Corporate ou couleur d'accentuation */
+  --md-accent-fg-color:         #4B575F;
+}
+
+/* Augmenter l'espacement global des listes à puces et ordonnées */
+.md-typeset ul, 
+.md-typeset ol {
+  padding-left: 1rem; /* Ajustez cette valeur selon vos préférences (ex: 2rem ou 3rem) */
+}
+
+/* Augmenter spécifiquement l'indentation des sous-listes imbriquées */
+.md-typeset li ul, 
+.md-typeset li ol {
+  margin-top: 0.4em;
+  padding-left: 3.5rem !important; 
+}
